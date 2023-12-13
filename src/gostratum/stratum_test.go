@@ -76,16 +76,16 @@ func TestWalletValidation(t *testing.T) {
 		shouldErr bool
 	}{
 		{
-			in:       "kaspa:qqayxgcjfh6d7uxpj4w3qzjvx73vdehfx22fl6cacmn44rpj5geg2rxyuhga4,Rig_3784816",
-			expected: "kaspa:qqayxgcjfh6d7uxpj4w3qzjvx73vdehfx22fl6cacmn44rpj5geg2rxyuhga4",
+			in:       "pyrin:qq2ngenk8pzw7r4dghwsmy7ctuy5thvgwq2vked6d4zdy37z86csvm8jqlrl8,Rig_3784816",
+			expected: "pyrin:qq2ngenk8pzw7r4dghwsmy7ctuy5thvgwq2vked6d4zdy37z86csvm8jqlrl8",
 		},
 		{
-			in:       "kaspa:qqkrl0er5ka5snd55gr9rcf6rlpx8nln8gf3jxf83w4dc0khfqmauy6qs83zm,Rig_3784816",
-			expected: "kaspa:qqkrl0er5ka5snd55gr9rcf6rlpx8nln8gf3jxf83w4dc0khfqmauy6qs83zm",
+			in:       "pyrin:qq2ngenk8pzw7r4dghwsmy7ctuy5thvgwq2vked6d4zdy37z86csvm8jqlrl8,Rig_3784816",
+			expected: "pyrin:qq2ngenk8pzw7r4dghwsmy7ctuy5thvgwq2vked6d4zdy37z86csvm8jqlrl8",
 		},
 		{
-			in:       "qqkrl0er5ka5snd55gr9rcf6rlpx8nln8gf3jxf83w4dc0khfqmauy6qs83zm,Rig_3784816",
-			expected: "kaspa:qqkrl0er5ka5snd55gr9rcf6rlpx8nln8gf3jxf83w4dc0khfqmauy6qs83zm",
+			in:       "qq2ngenk8pzw7r4dghwsmy7ctuy5thvgwq2vked6d4zdy37z86csvm8jqlrl8,Rig_3784816",
+			expected: "pyrin:qq2ngenk8pzw7r4dghwsmy7ctuy5thvgwq2vked6d4zdy37z86csvm8jqlrl8",
 		},
 	}
 
