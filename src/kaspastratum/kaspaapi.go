@@ -100,7 +100,7 @@ func (s *PyrinApi) waitForSync(verbose bool) error {
 
 func (s *PyrinApi) startBlockTemplateListener(ctx context.Context, blockReadyCb func()) {
 	blockReadyChan := make(chan bool)
-	err := s.kaspad.RegisterForNewBlockTemplateNotifications(func(_ *appmessage.NewBlockTemplateNotificationMessage) {
+	err := s.pyipad.RegisterForNewBlockTemplateNotifications(func(_ *appmessage.NewBlockTemplateNotificationMessage) {
 		blockReadyChan <- true
 	})
 	if err != nil {
@@ -110,9 +110,9 @@ func (s *PyrinApi) startBlockTemplateListener(ctx context.Context, blockReadyCb 
 	ticker := time.NewTicker(s.blockWaitTime)
 	for {
 		if err := s.waitForSync(false); err != nil {
-			s.logger.Error("error checking kaspad sync state, attempting reconnect: ", err)
+			s.logger.Error("error checking pyipad sync state, attempting reconnect: ", err)
 			if err := s.reconnect(); err != nil {
-				s.logger.Error("error reconnecting to kaspad, waiting before retry: ", err)
+				s.logger.Error("error reconnecting to pyipad, waiting before retry: ", err)
 				time.Sleep(5 * time.Second)
 			}
 		}
