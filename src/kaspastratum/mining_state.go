@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
+	"github.com/Pyrinpyi/pyipad/app/appmessage"
 	"github.com/onemorebsmith/kaspastratum/src/gostratum"
 )
 
@@ -19,7 +19,7 @@ type MiningState struct {
 	initialized bool
 	useBigJob   bool
 	connectTime time.Time
-	stratumDiff *kaspaDiff
+	stratumDiff *pyrinDiff
 }
 
 func MiningStateGenerator() any {
