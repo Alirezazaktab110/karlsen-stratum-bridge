@@ -109,7 +109,7 @@ func (c *clientListener) NewBlockAvailable(kapi *PyrinApi) {
 					client.Disconnect() // unrecoverable
 				} else {
 					RecordWorkerError(client.WalletAddr, ErrFailedBlockFetch)
-					client.Logger.Error(fmt.Sprintf("failed fetching new block template from kaspa: %s", err))
+					client.Logger.Error(fmt.Sprintf("failed fetching new block template from pyrin: %s", err))
 				}
 				return
 			}
