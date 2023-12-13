@@ -30,7 +30,7 @@ func NewPyrinAPI(address string, blockWaitTime time.Duration, logger *zap.Sugare
 		address:       address,
 		blockWaitTime: blockWaitTime,
 		logger:        logger.With(zap.String("component", "kaspaapi:"+address)),
-		kaspad:        client,
+		pyipad:        client,
 		connected:     true,
 	}, nil
 }
