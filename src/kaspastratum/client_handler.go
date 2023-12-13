@@ -175,7 +175,7 @@ func (c *clientListener) NewBlockAvailable(kapi *PyrinApi) {
 		c.lastBalanceCheck = time.Now()
 		if len(addresses) > 0 {
 			go func() {
-				balances, err := kapi.kaspad.GetBalancesByAddresses(addresses)
+				balances, err := kapi.pyipad.GetBalancesByAddresses(addresses)
 				if err != nil {
 					c.logger.Warn("failed to get balances from kaspa, prom stats will be out of date", zap.Error(err))
 					return
