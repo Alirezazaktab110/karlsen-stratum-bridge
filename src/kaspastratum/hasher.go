@@ -10,7 +10,7 @@ import (
 	"math/big"
 
 	"github.com/kaspanet/kaspad/app/appmessage"
-	"golang.org/x/crypto/blake2b"
+	"golang.org/x/crypto/blake3"
 )
 
 // static value definitions to avoid overhead in diff translations
