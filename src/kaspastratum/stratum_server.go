@@ -18,7 +18,7 @@ const minBlockWaitTime = 500 * time.Millisecond
 
 type BridgeConfig struct {
 	StratumPort     string        `yaml:"stratum_port"`
-	RPCServer       string        `yaml:"kaspad_address"`
+	RPCServer       string        `yaml:"pyipad_address"`
 	PromPort        string        `yaml:"prom_port"`
 	PrintStats      bool          `yaml:"print_stats"`
 	UseLogFile      bool          `yaml:"log_to_file"`
