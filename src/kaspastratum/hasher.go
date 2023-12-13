@@ -9,8 +9,8 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/kaspanet/kaspad/app/appmessage"
-	"golang.org/x/crypto/blake2b"
+	"github.com/Pyrinpyi/pyipad/app/appmessage"
+	"golang.org/x/crypto/blake3"
 )
 
 // static value definitions to avoid overhead in diff translations
