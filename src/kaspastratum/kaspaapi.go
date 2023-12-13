@@ -134,7 +134,7 @@ func (ks *pyrinApi) GetBlockTemplate(
 	template, err := ks.pyipad.GetBlockTemplate(client.WalletAddr,
 		fmt.Sprintf(`'%s' via onemorebsmith/kaspa-stratum-bridge_%s`, client.RemoteApp, version))
 	if err != nil {
-		return nil, errors.Wrap(err, "failed fetching new block template from kaspa")
+		return nil, errors.Wrap(err, "failed fetching new block template from pyrin")
 	}
 	return template, nil
 }
